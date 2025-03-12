@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.7;
+  /* background: #200; */
+}
+h1,h2,h3,h4,h5{
+  font-weight: 100;
+}
+ul li{
+  cursor: pointer;
+}
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  margin-top: 50px;
+  background: transparent !important;
+  position: absolute;
+  z-index: 200;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar .navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  /* letter-spacing: 1rem; */
+  letter-spacing: 0.2em;
+}
+
+.site-hero {
+  height: 800px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-image: url("images/image_1.jpg.webp");
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-position: center center;
+  background-size: cover;
+  /* overflow: hidden; */
+}
+
+.site-hero:before {
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 800px;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+}
+
+.site-hero .intro-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+  z-index: 200;
+}
+.site-hero .intro-text .text-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 1;
+}
+.site-hero .text-center-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.site-hero .text-center .text-center-head {
+  font-weight: 100;
+  font-size: 75px;
+}
+.text-center-second {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.sect2 {
+  width: 100%;
+  /* height: 800px; */
+  background-color: #222222;
+  }
+
+.portfolio{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction: column;
+  padding: 50px;
+  color: white;
+  gap: 40px;
+}
+.filters{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap: 30px;
+  color: wheat;
+}
+.row-grid{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 30px;
+  padding: 10px;
+}
+.single-box .box-img{
+  width: 350px;
+  height: 350px;
+}
+.box-img img {
+  width: 100%;
+  height: 100%;
+}
+.filters a {
+  color: rgba(255, 255, 255, 0.4);
+  transition: 0.3s;
+}
+.filters a:hover{
+  color: rgb(186, 201, 100) ;
+}
+.row h1{
+  font-weight: 100;
+}
+
+.box-about{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction: column;
+  margin: 15px;
+}
+.box-about .about-name{
+  font-size: large;
+}
+.box-about .about-category{
+  font-size: small;
+  color: rgba(255, 255, 255, 0.4);
+}
+.sect3{
+  padding: 100px;
+  width: 100%;
+  background-color: #222222;
+  color: white;
+  
+}
+
+.myresume{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction: column;
+  gap: 70px;
+}
+.resume-columns{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap: 50px;
+}
+
+.res_col{
+  display:flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.resume-item{
+  background-color: #333;
+  padding: 30px;
+  border-radius: 5px;
+}
